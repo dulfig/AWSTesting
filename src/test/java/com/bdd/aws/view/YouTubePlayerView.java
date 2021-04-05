@@ -17,6 +17,6 @@ public class YouTubePlayerView {
 
     public WebElement getURLtoCopy () {
         return driver.findElement(By.xpath("//*[@id='share-url']"));
-      }
-
+    }
+    
 }
