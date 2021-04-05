@@ -10,7 +10,7 @@ public class AirbnbModel {
 	WebDriver driver;
 	AirbnbView airbnb;
 	
-	AirbnbModel(WebDriver driver){
+	public AirbnbModel(WebDriver driver){
 		
 		this.driver = driver;
 		airbnb = new AirbnbView(this.driver);
