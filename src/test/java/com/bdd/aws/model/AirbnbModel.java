@@ -17,7 +17,7 @@ public class AirbnbModel {
 		
 	}
 	
-	public String getVideoTitle(WebDriver driver) {
+	public String getVideoTitle() {
 		
 		title = airbnb.getVideoTitle().getText();
 		return title;
