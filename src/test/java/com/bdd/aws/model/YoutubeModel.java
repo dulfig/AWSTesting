@@ -1,7 +1,14 @@
 package com.bdd.aws.model;
 
 public class YoutubeModel {
-	String title;
-	// Add getters/setters
+	String shareURL;
+
+	public String getShareURL() {
+		return shareURL;
+	}
+
+	public void setShareURL(String URL) {
+		this.shareURL = URL;
+	}
 
 }
