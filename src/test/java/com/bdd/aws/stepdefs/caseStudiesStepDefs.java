@@ -2,6 +2,7 @@ package com.bdd.aws.stepdefs;
 
 
 import com.bdd.aws.controller.AWSController_EC2;
+import com.bdd.aws.controller.AWSController_Home;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
 import cucumber.api.java.en.Then;
@@ -11,15 +12,23 @@ import org.openqa.selenium.WebDriver;
 
 public class caseStudiesStepDefs {
 
-    WebDriver driver;
+
     AWSController_EC2 ec2;
+    private WebPage state;
+    WebDriver driver;
+
+
+    public caseStudiesStepDefs(WebPage state) {
+        this.state = state;
+        this.state.driver = driver;
+    }
 
     @Given("I am on the page with Case Studies")
-    public void verifyCaseStudies(WebDriver driver) {
+    public void verifyCaseStudies() {
 
-        this.driver = driver;
+
         ec2 = new AWSController_EC2();
-        ec2.setUp(driver);
+        ec2.setUp(state.driver);
 
         Assert.assertEquals("https://aws.amazon.com/ec2/?hp=tile&so-exp=below&ec2-whats-new.sort-by=item.additionalFields.postDateTime&ec2-whats-new.sort-order=desc",
                 driver.getCurrentUrl());
