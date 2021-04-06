@@ -23,9 +23,10 @@ public class HomeToCaseStudiesStepDefs {
 	}
 	
 	@When("I click on the Amazon EC2 link")
-	public void clickOnAmazonEC2Link() {
+	public void clickOnAmazonEC2Link(WebDriver driver) {
 		
 		AWSController_home = new AWSController_Home();
+		AWSController_home.setUp(driver);
 		AWSController_home.toPage();
 		
 	}
