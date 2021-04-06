@@ -42,7 +42,7 @@ public class HomeToCaseStudiesStepDefs {
 	public void verifyRedirectionToCaseStudiesPage() {
 		
 		// verify URL
-		Assert.assertEquals("https://aws.amazon.com/ec2/?hp=tile&so-exp=below", driver.getCurrentUrl());
+		Assert.assertEquals("https://aws.amazon.com/ec2/?hp=tile&so-exp=below", state.driver.getCurrentUrl());
 		// verify title 
 		Assert.assertEquals("Amazon EC2", state.driver.getTitle());
 		
