@@ -1,4 +1,4 @@
-@tag
+@ComputeLink
 Feature: Click on Compute Link to Reveal Amazon EC2 Link
 
 	@tag1
