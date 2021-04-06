@@ -5,14 +5,12 @@ import cucumber.api.java.en.When;
 import cucumber.api.java.en.Then;
 
 import org.openqa.selenium.WebDriver;
-
-
-
-
 import org.junit.Assert;
-
+import com.bdd.aws.controller.AWSController_Home;
 
 public class HomeToCaseStudiesStepDefs {
+	
+	AWSController_Home AWSController_home;
 	
 	@Given("I am on the above page")
 	public void verifyCurrentPage(WebDriver driver) {
@@ -27,7 +25,8 @@ public class HomeToCaseStudiesStepDefs {
 	@When("I click on the Amazon EC2 link")
 	public void clickOnAmazonEC2Link() {
 		
-		// amazon EC2 link has already been clicked. Help.
+		AWSController_home = new AWSController_Home();
+		AWSController_home.toPage();
 		
 	}
 	
