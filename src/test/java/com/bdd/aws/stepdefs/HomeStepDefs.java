@@ -32,7 +32,7 @@ public class HomeStepDefs {
 	@When("I click on the Compute link under Explore Our Products")
 	public void clickOnComputeLink() {
 
-		// this clicks on compute link and clicks on EC2 link
+		// this clicks on compute link
 		AWSController_home.clickCompute();
 
 	}
