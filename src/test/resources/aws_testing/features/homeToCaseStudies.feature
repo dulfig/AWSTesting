@@ -1,4 +1,4 @@
-@tag
+@EC2Link
 Feature: Redirection to Case Studies page
 
 	@tag1
