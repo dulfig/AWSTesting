@@ -16,13 +16,16 @@ public class AWSController_Home implements AWSController {
 
 	}
 
+	// Click compute link before page navigation
+	public void clickCompute() {
+		home.getComputeButton().click();
+	}
+
 	// Navigate to the page
 	public void toPage() {
 		// Click necessary buttons to get to page
-		home.getComputeButton().click();
 		home.getEC2Link().click();
-
 	}
 	// Additional methods required for testing
-	
+
 }
