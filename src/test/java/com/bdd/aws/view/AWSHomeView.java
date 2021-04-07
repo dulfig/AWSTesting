@@ -12,7 +12,7 @@ public class AWSHomeView {
 	}
 	
 	public WebElement getComputeButton() {
-		return driver.findElement(By.xpath("//body/div[@id='aws-page-content']/main[1]/div[3]/div[1]/div[6]/div[7]/div[5]/a[1]"));
+		return driver.findElement(By.xpath("//body[1]/div[2]/main[1]/div[3]/div[1]/div[6]/div[11]/div[a[span[contains(text(),'Compute')]]]/a"));
 	}
 	
 	public WebElement getEC2Link() {
